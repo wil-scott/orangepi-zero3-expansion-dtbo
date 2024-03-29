@@ -1,0 +1,31 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    fragment@0 {
+        target-path = "/";
+        __overlay__ {
+            soc {
+                usb@5310000 {
+                    status = "okay";
+                };
+
+                usb@5310400 {
+                    status = "okay";
+                };
+
+                usb@5311000 {
+                    status = "okay";
+                };
+
+                usb@5311400 {
+                    status = "okay";
+                };
+
+                ir@7040000 {
+			        status = "okay";
+		        };
+            };
+        };
+    };
+};
